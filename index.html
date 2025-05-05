@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion - DukaaOn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #FF7D00;
+            border-bottom: 2px solid #FF7D00;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #FF7D00;
+            margin-top: 30px;
+        }
+        .container {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            border: 1px solid #e0e0e0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #FF7D00;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 16px 0;
+            border: none;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #E66C00;
+        }
+        .info-box {
+            background-color: #e8f4fd;
+            border-left: 4px solid #2196F3;
+            padding: 12px 16px;
+            margin: 16px 0;
+        }
+        ol li, ul li {
+            margin-bottom: 12px;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+        #copySuccess {
+            color: green;
+            margin-top: 8px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Account Deletion Request</h1>
+    
+    <div class="container">
+        <h2>How to Delete Your DukaaOn Account</h2>
+        
+        <p>We're sorry to see you go. To request deletion of your DukaaOn account and associated data, please follow one of these methods:</p>
+        
+        <h3>Option 1: Send an Email Request</h3>
+        <p>Click the button below to automatically generate an email request:</p>
+        
+        <a class="btn" href="mailto:admin@dukaaon.in?subject=DukaaOn%20Account%20Deletion%20Request&body=Hello%20DukaaOn%20Team%2C%0A%0AI%20would%20like%20to%20request%20the%20deletion%20of%20my%20DukaaOn%20account%20and%20associated%20data.%0A%0APlease%20find%20my%20account%20details%20below%3A%0A%0APhone%20Number%3A%20%5BYour%20registered%20phone%20number%5D%0ABusiness%20Name%3A%20%5BYour%20business%20name%5D%0A%0APlease%20delete%20all%20personal%20information%20associated%20with%20my%20account%2C%20including%20my%20profile%20data%2C%20transaction%20history%2C%20and%20any%20other%20stored%20information.%0A%0AThank%20you%20for%20your%20assistance.%0A%0ASincerely%2C%0A%5BYour%20Name%5D">
+            Send Account Deletion Email
+        </a>
+        
+        <div class="info-box">
+            <p><strong>Note:</strong> If the button doesn't work, please manually send an email to <strong>admin@dukaaon.in</strong> with the subject "DukaaOn Account Deletion Request" and include your registered phone number and business name in the body.</p>
+            
+            <button id="copyEmailBtn" class="btn" style="background-color: #2196F3; font-size: 14px; padding: 8px 16px;">
+                Copy Email Address
+            </button>
+            <span id="copySuccess">Email copied to clipboard!</span>
+        </div>
+        
+        <h3>Option 2: Request Through the App</h3>
+        <ol>
+            <li>Open the DukaaOn app</li>
+            <li>Go to Profile</li>
+            <li>Tap on "Settings"</li>
+            <li>Select "Delete Account"</li>
+            <li>Follow the on-screen instructions</li>
+        </ol>
+    </div>
+    
+    <div class="container">
+        <h2>What Happens When You Delete Your Account</h2>
+        
+        <h3>Data We Delete:</h3>
+        <ul>
+            <li><strong>Personal Information:</strong> Your name, contact details, and profile information</li>
+            <li><strong>Business Information:</strong> Business name, address, and other shop details</li>
+            <li><strong>User Preferences:</strong> Settings and preferences associated with your account</li>
+            <li><strong>Device Information:</strong> Device identifiers linked to your account</li>
+        </ul>
+        
+        <h3>Data Retention:</h3>
+        <ul>
+            <li><strong>Transaction Records:</strong> Basic transaction records may be retained for legal and financial compliance purposes for up to 7 years as required by law</li>
+            <li><strong>Anonymized Data:</strong> We may retain anonymized usage data that does not identify you personally</li>
+            <li><strong>Legal Requirements:</strong> Information required to be kept by applicable laws and regulations</li>
+        </ul>
+        
+        <h3>Processing Time:</h3>
+        <p>Your account deletion request will be processed within 30 days. You'll receive a confirmation email once your account has been deleted.</p>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 DukaaOn. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+    </div>
+
+    <script>
+        document.getElementById('copyEmailBtn').addEventListener('click', function() {
+            navigator.clipboard.writeText('admin@dukaaon.in').then(function() {
+                const successMsg = document.getElementById('copySuccess');
+                successMsg.style.display = 'inline';
+                setTimeout(function() {
+                    successMsg.style.display = 'none';
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+</html> 
